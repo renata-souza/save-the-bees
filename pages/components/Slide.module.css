@@ -1,0 +1,39 @@
+.container {
+  margin: auto;
+  overflow: hidden;
+  max-width: 80%;
+}
+
+.content {
+  display: flex;
+  transition: transform .3s ease;
+}
+
+.item {
+  flex-shrink: 0; /* impede que os blocos flex diminuam para caber dentro do vw, permitindo que ocupem os 80% definidos no width */
+  width: 70%;
+  height: 400px;
+  margin: 0 15%;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto;
+  width: 70%;
+}
+
+.nav button {
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: #F8B21C;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nav button:hover {
+  background-color: #F8B21C;
+}
